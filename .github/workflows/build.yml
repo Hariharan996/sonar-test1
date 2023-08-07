@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - sonar-test1
-
 jobs:
   build:
     name: Build
