@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0  
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: sqp_4d8bf913367fcf214983e6a24ec02b66d280ddfb
           SONAR_HOST_URL: http://192.168.42.137:9000
-          
+          Projectkey: vuln-app
