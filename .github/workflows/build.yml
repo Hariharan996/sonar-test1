@@ -18,4 +18,4 @@ jobs:
         env:
           SONAR_TOKEN: sqp_4d8bf913367fcf214983e6a24ec02b66d280ddfb
           SONAR_HOST_URL: http://192.168.42.137:9000
-          Projectkey: vuln-app
+          projectkey: Vuln-app
