@@ -31,7 +31,7 @@ jobs:
           restore-keys: ${{ runner.os }}-gradle
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: sqp_9add51e8814196c1f374199b696da70f30e1b294
           SONAR_HOST_URL: http://192.168.42.137:9000
+          projectkey: Vuln-app
         run: ./gradlew build sonar --info
